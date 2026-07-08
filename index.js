@@ -12,6 +12,9 @@ app.get('/twitter', (req, res) => {
   res.send('!sdfs')
 })
 
+app.get('github',(req,res)=>{
+    res.send('!github')
+})
 
 app.listen(process.env.PORT|| 5000, () => {
   console.log(`Example app listening on port ${port}`)
