@@ -12,7 +12,7 @@ app.get('/twitter', (req, res) => {
   res.send('!sdfs')
 })
 
-app.get('github',(req,res)=>{
+app.get('/github',(req,res)=>{
     res.send('!github')
 })
 
