@@ -11,9 +11,16 @@ app.get('/', (req, res) => {
 app.get('/twitter', (req, res) => {
   res.send('!sdfs')
 })
+const github_data = {
+  "id": 1,
+  "name": "John Doe",
+  "age": 24,
+  "email": "john@example.com",
+  "isStudent": true
+}
 
 app.get('/github',(req,res)=>{
-    res.send('!github')
+    res.json(github_data)
 })
 
 app.listen(process.env.PORT|| 5000, () => {
